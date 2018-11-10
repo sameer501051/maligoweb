@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+-<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maligo Web Solution</title>
 
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Normalize Css -->
+<link href="assets/Normalize/normalize.css" rel="stylesheet">
+<!--Font Awesome Css-->
+<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!--Linear icon Css-->
+<link href="assets/linearicons/css/icon-font.min.css" rel="stylesheet">
+<!--Animate Css-->
+<link href="assets/animate/animate.css" rel="stylesheet">
+<!--Revolution slider main css-->
+<link href="assets/revolution/css/settings.css" rel="stylesheet">
+<!--Revolution layer and navigation css-->
+<link href="assets/revolution/css/layers.css" rel="stylesheet">
+<link href="assets/revolution/css/navigation.css" rel="stylesheet">
+<!--Portfolio Css-->
+<link href="assets/css/ionicons.min.css" rel="stylesheet">
+<link href="assets/css/magnific-popup.css" rel="stylesheet">
+<!--Custum Css-->
+<link href="css/style.css" rel="stylesheet">
+<!--Modernizr Js-->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+<body>
+ 
+
+
+  <!-- MAIN CONTENT HERE -->
+  <%- defineContent('hero') %>
+
+  <main>
+    <div class="container">
+      <%- body %>
+    </div>
+  </main>
+
+  <footer>
+    Maligoweb Site. Copyright &copy; 2018
+
+  </footer>
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/easing/jquery.easing.min.js"></script>
+<script src="assets/isotope/jquery.isotope.js"></script>
+<script src="assets/jquery/imagesloaded.pkgd.min.js"></script>
+<script src="assets/jquery/jquery.magnific-popup.min.js"></script>
+<script src="assets/number-animation/jquery.animateNumber.min.js"></script>
+<!-- REVOLUTION JS FILES --> 
+<script type="text/javascript" src="assets/revolution/js/source/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/source/jquery.themepunch.revolution.js"></script> 
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+(Load Extensions only on Local File Systems ! 
+The following part can be removed on Server for On Demand Loading) --> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script> 
+<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script> 
+<script>
+  var revapi;
+  jQuery(document).ready(function() {   
+    revapi = jQuery("#rev_slider").revolution({
+      sliderType:"standard",
+      sliderLayout:"auto",
+      fullScreenOffsetContainer:".header",
+
+<!--      fullScreenOffset:"50px",-->
+      delay:5000,
+      navigation: {
+        arrows:{enable:true}        
+      },      
+      responsiveLevels: [1240, 1024, 778, 480],
+            visibilityLevels: [1240, 1024, 778, 480],
+           gridwidth: [1240, 1024, 778, 480],
+           gridheight: [620, 520, 580, 480],
+       
+    });   
+  }); /*ready*/
+</script> 
+ <!-- Contact Form Script --> 
+ <script src="assets/contact-form/js/validator.min.js"></script>
+ <script src="assets/contact-form/js/form-scripts.js"></script>
+ 
+<script src="assets/jquery/plugins.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
